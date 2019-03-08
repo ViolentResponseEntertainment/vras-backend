@@ -9,5 +9,5 @@ ssh pi 'unzip -o -u -d /home/pi/Server/Webserver/vras-backend/ /home/pi/Server/W
 # execute yarn in the app directory to install all dependencies
 ssh pi 'cd /home/pi/Server/Webserver/vras-backend && yarn'
 # start the app with forever
-ssh pi 'cd /home/pi/Server/Webserver/vras-backend && forever -c "yarn start" --uid="vras-backend" ./'
+ssh pi 'sudo systemctl restart vras-backend'
 
