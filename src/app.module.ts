@@ -8,6 +8,10 @@ import { Connection } from 'typeorm';
 import { MembersModule } from './members/members.module';
 import { UserController } from './user/user.controller';
 import { UserModule } from './user/user.module';
+import { WeaponsService } from './weapons/weapons.service';
+import { WeaponsModule } from './weapons/weapons.module';
+import { AuthService } from './auth/auth.service';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -19,6 +23,8 @@ import { UserModule } from './user/user.module';
   }),
     MembersModule,
     UserModule,
+    WeaponsModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],
