@@ -1,0 +1,5 @@
+{
+    "uid": "vras-backend",
+    "sourceDir": "./",
+    "COMMAND": "yarn start"
+}
